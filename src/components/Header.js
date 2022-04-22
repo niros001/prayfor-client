@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {AiOutlineGlobal} from 'react-icons/ai';
+import {Link} from 'react-router-dom';
 import logo from '../assets/logo_ba.svg'
 
 const Container = styled.div`
@@ -10,10 +11,18 @@ const Container = styled.div`
   padding: 8px 12px;
 `
 
-const Menu = styled.div`
+const Ul = styled.ul`
   display: flex;
-  div {
+  li {
     margin: 0 10px;
+    //border-bottom-style: solid;
+    //border-bottom-width: 5px;
+    //border-image: linear-gradient(180deg, transparent, white) 1;
+    //:hover {
+    //  border-image: linear-gradient(180deg, black, black) 1;
+    //  transition: border 5.5s;
+    //  font-weight: bold;
+    //}
   }
 `;
 
@@ -37,11 +46,19 @@ const DonationBtn = styled.div`
 const Header = () => (
     <Container>
       <img alt="logo" src={logo} />
-      <Menu>
-        <div>How It Works?</div>
-        <div>Prayers</div>
-        <div>Help</div>
-      </Menu>
+      <nav>
+        <Ul>
+          <li>
+            <Link to="/how-it-works">How It Works?</Link>
+          </li>
+          <li>
+            <Link to="/prayers">Prayers</Link>
+          </li>
+          <li>
+            <Link to="/help">Help</Link>
+          </li>
+        </Ul>
+      </nav>
       <Extra>
         <DonationBtn>Donation</DonationBtn>
         <AiOutlineGlobal />
