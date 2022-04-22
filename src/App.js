@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Navigate, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import {HowItWorks, Prayers, Help} from './components/pages'
+import {HowItWorks, Prayers, Help, Donation} from './components/pages'
 
 const Container = styled.div`
   height: 100vh;
@@ -14,9 +14,8 @@ const Container = styled.div`
 
 const Content = styled.div`
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 12px;
+  overflow-y: auto;
 `
 
 const App = () => (
@@ -28,6 +27,7 @@ const App = () => (
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/prayers" element={<Prayers />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/donation" element={<Donation />} />
         </Routes>
       </Content>
       <Footer />

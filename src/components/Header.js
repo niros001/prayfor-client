@@ -9,20 +9,19 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 8px 12px;
+  border-bottom: .5px solid lightgray;
 `
 
-const Ul = styled.ul`
+const Nav = styled.nav`
   display: flex;
-  li {
+  a {
+    color: black;
+    font-size: 20px;
     margin: 0 10px;
-    //border-bottom-style: solid;
-    //border-bottom-width: 5px;
-    //border-image: linear-gradient(180deg, transparent, white) 1;
-    //:hover {
-    //  border-image: linear-gradient(180deg, black, black) 1;
-    //  transition: border 5.5s;
-    //  font-weight: bold;
-    //}
+    text-decoration-line: none;
+    :hover {
+      text-decoration-line: underline;
+    }
   }
 `;
 
@@ -46,21 +45,15 @@ const DonationBtn = styled.div`
 const Header = () => (
     <Container>
       <img alt="logo" src={logo} />
-      <nav>
-        <Ul>
-          <li>
-            <Link to="/how-it-works">How It Works?</Link>
-          </li>
-          <li>
-            <Link to="/prayers">Prayers</Link>
-          </li>
-          <li>
-            <Link to="/help">Help</Link>
-          </li>
-        </Ul>
-      </nav>
+      <Nav>
+        <Link to="/how-it-works">How It Works?</Link>
+        <Link to="/prayers">Prayers</Link>
+        <Link to="/help">Help</Link>
+      </Nav>
       <Extra>
-        <DonationBtn>Donation</DonationBtn>
+        <Link to="/donation">
+          <DonationBtn>Donation</DonationBtn>
+        </Link>
         <AiOutlineGlobal />
       </Extra>
     </Container>

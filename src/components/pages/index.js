@@ -1,3 +1,4 @@
-export {default as HowItWorks} from './HowItWorks/HowItWorks';
-export {default as Prayers} from './Prayers/Prayers';
-export {default as Help} from './Help/Help';
+export {default as HowItWorks} from './HowItWorks';
+export {default as Prayers} from './Prayers';
+export {default as Help} from './Help';
+export {default as Donation} from './Donation';
