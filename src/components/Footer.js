@@ -14,12 +14,13 @@ const Links = styled.div`
   display: flex;
   a {
     margin-left: 12px;
+    color: white !important;
   }
 `
 
 const Footer = () => (
     <Container>
-      <div>@Copyrights {new Date().getFullYear()} . All Rights Reserved</div>
+      <div>@ Copyrights {new Date().getFullYear()}. All Rights Reserved.</div>
       <Links>
         <a>Privacy Policy</a>
         <a>Terms and Condition</a>
