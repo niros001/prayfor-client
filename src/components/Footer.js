@@ -8,10 +8,6 @@ const Container = styled.div`
   background-color: #151921;
   color: white;
   padding: 8px 12px;
-  height: 60px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 `
 
 const Links = styled.div`
