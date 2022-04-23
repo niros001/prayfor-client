@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 `
 
 const SubTitle = styled.div`
