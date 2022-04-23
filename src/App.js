@@ -13,7 +13,9 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 12px;
   background-color: #FBFBFB;
   overflow-y: auto;
