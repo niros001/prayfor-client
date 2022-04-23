@@ -32,6 +32,14 @@ const StepWrapper = styled.div`
   h4 {
     text-align: center;
   }
+  img {
+    height: 300px;
+  }
+  @media (max-width: 600px) {
+    img {
+      height: 150px;
+    }
+  }
 `
 
 const Step = ({step, icon, info}) => (

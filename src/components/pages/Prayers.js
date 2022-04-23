@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Empty from '../Empty';
+import {Empty} from 'antd';
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const Prayers = () => (
     <Container>
       <h2>Last Prayers</h2>
       <SubTitle>Every prayer request delivered, detailed confirmation provided throw email.</SubTitle>
-      <Empty />
+      <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
     </Container>
 )
 

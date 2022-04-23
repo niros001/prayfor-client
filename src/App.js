@@ -15,6 +15,7 @@ const Container = styled.div`
 const Content = styled.div`
   height: 100%;
   padding: 12px;
+  background-color: #FBFBFB;
   overflow-y: auto;
 `
 
