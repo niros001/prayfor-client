@@ -19,6 +19,7 @@ const Content = styled.div`
   padding: 12px;
   background-color: #FBFBFB;
   overflow-y: auto;
+  margin-bottom: 60px;
 `
 
 const App = () => (
