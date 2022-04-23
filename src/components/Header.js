@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {Drawer, Divider} from 'antd';
+import {Drawer, Divider, Button} from 'antd';
 import {GlobalOutlined, MenuOutlined} from '@ant-design/icons';
 import {Link} from 'react-router-dom';
 import logoDesktop from '../assets/logo_desktop.svg'
 import logoMobile from '../assets/Pray For_Icon.svg'
-import PrimaryBtn from './PrimatyBtn';
 
 const Container = styled.div`
   padding: 8px 12px;
@@ -59,6 +58,12 @@ const Extra = styled.div`
   }
 `;
 
+const StyledButton = styled(Button)`
+  background-color: #151921 !important;
+  color: white !important;
+  border: none !important;
+`
+
 const Header = () => {
   const [visible, setVisible] = useState(false);
   return (
@@ -72,7 +77,7 @@ const Header = () => {
           </Nav>
           <Extra>
             <Link to="/donation">
-              <PrimaryBtn>Donation</PrimaryBtn>
+              <StyledButton style={{marginRight: 10}}>Donation</StyledButton>
             </Link>
             <GlobalOutlined />
           </Extra>
@@ -93,7 +98,7 @@ const Header = () => {
               <Link to="/help" onClick={() => setVisible(false)}>Help</Link>
               <Divider />
               <Link to="/donation" onClick={() => setVisible(false)}>
-                <PrimaryBtn>Donation</PrimaryBtn>
+                <StyledButton>Donation</StyledButton>
               </Link>
               <Divider />
               <GlobalOutlined />
