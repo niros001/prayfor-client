@@ -18,7 +18,7 @@ const Content = styled.div`
   flex: 1;
   padding: 12px;
   background-color: #FBFBFB;
-  overflow-y: auto;
+  overflow-y: scroll;
 `
 
 const App = () => (
